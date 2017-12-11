@@ -246,7 +246,7 @@ end
 #puts player_names
 
 def player_with_longest_name
-  player_names.max
+  player_names.max_by { |e| e.length }
   # longest_name = 0
   # long_name = nil
   # player_names.each do |name|
