@@ -270,6 +270,7 @@ def long_name_steals_a_ton?
       end
     end
   end
+  puts steals
   game_hash.each do |location, info|
     if info[:players].has_key?(long_name)
       if info[:players][long_name][:steals] == steals
