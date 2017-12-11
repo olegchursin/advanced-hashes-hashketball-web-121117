@@ -239,12 +239,18 @@ end
 
 #puts winning_team
 
-def player_names
+def player_names # retunrs an array of player names
   game_hash[:home][:players].keys + game_hash[:away][:players].keys
 end
 
-puts player_names
+#puts player_names
 
 def player_with_longest_name
-
+  longest_name = 0
+  long_name = nil
+  player_names.each do |name|
+    if longest_name < name.length
+      longest_name = name.length
+      long_name = name
+  end
 end
