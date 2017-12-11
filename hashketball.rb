@@ -238,3 +238,7 @@ def winning_team
 end
 
 #puts winning_team
+
+def player_with_longest_name
+  
+end
