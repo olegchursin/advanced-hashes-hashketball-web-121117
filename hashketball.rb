@@ -241,7 +241,7 @@ end
 
 def player_names
   game_hash.each do |location, info|
-    info[:players].map { |e|  } do |name, stats|
+    info[:players].map do |name, stats|
       name
     end
   end
