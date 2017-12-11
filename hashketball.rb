@@ -246,15 +246,16 @@ end
 #puts player_names
 
 def player_with_longest_name
-  longest_name = 0
-  long_name = nil
-  player_names.each do |name|
-    if longest_name < name.length
-      longest_name = name.length
-      long_name = name
-    end
-  end
-  long_name
+  player_names.max
+  # longest_name = 0
+  # long_name = nil
+  # player_names.each do |name|
+  #   if longest_name < name.length
+  #     longest_name = name.length
+  #     long_name = name
+  #   end
+  # end
+  # long_name
 end
 
 puts player_with_longest_name
