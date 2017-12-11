@@ -102,7 +102,7 @@ def game_hash
           :blocks => 1,
           :slam_dunks => 0
         },
-        "Brendan Haywood" => {
+        "Brendan " => {
           :number => 33,
           :shoe => 15,
           :points => 6,
