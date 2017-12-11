@@ -117,6 +117,11 @@ def game_hash
   }
 end
 
+# if we had players in an array instead of hash
+# def find_player(player_name)
+#   players = game_hash[:home][:players] + game_hash[:away][:players]
+#   players.find { |player| player[:player_name] == player_name }
+# end
 
 def num_points_scored(name)
   game_hash.each do |location, info|
