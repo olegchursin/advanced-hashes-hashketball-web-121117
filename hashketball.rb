@@ -240,11 +240,7 @@ end
 #puts winning_team
 
 def player_names
-  game_hash.each do |location, info|
-    info[:players].map do |name, stats|
-      name
-    end
-  end
+  game_hash[:home][:players] + game_hash[:away][:players]
 end
 
 puts player_names
