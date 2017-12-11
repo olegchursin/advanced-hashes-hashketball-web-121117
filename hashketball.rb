@@ -222,7 +222,8 @@ def winning_team
     if location == :home
       info[:players].each do |name, stats|
         home_team += stats[:points]
-    elsif location == :away
+      end
+    if location == :away
       info[:players].each do |name, stats|
         away_team += stats[:points]
     end
