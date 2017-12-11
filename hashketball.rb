@@ -240,7 +240,7 @@ end
 #puts winning_team
 
 def player_names
-  game_hash[:home][:players].keys
+  game_hash[:home][:players].keys + game_hash[:away][:players].keys
 end
 
 puts player_names
