@@ -239,6 +239,14 @@ end
 
 #puts winning_team
 
+def player_names
+  game_hash.map do |location, info|
+    info[:players].each_key do |name|
+      name
+    end
+  end
+end
+
 def player_with_longest_name
-  
+
 end
